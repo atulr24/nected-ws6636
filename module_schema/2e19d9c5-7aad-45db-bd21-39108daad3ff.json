@@ -1,0 +1,24 @@
+{
+ "entityType": "module_schema",
+ "data": {
+  "createdAt": "2025-11-15T11:05:31.57Z",
+  "updatedAt": "2025-11-15T11:05:31.57Z",
+  "isDeleted": false,
+  "entityId": "2e19d9c5-7aad-45db-bd21-39108daad3ff",
+  "name": "names",
+  "moduleId": "0122d361-4234-454a-8741-f55d9a910a65",
+  "dataType": "string",
+  "usageType": "optional",
+  "options": [
+   {
+    "value": "Atul"
+   },
+   {
+    "value": "Asd"
+   },
+   {
+    "value": "das"
+   }
+  ]
+ }
+}
