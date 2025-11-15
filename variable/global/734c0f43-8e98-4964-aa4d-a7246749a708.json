@@ -1,0 +1,23 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2025-11-15T11:10:53.255Z",
+  "updatedAt": "2025-11-15T11:10:53.255Z",
+  "isDeleted": false,
+  "commitId": "",
+  "status": "",
+  "lastVersion": "",
+  "isLive": null,
+  "commitInfo": {
+   "timeStamp": "0001-01-01T00:00:00Z"
+  },
+  "entityId": "734c0f43-8e98-4964-aa4d-a7246749a708",
+  "name": "namess",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "string",
+  "value": {
+   "data": "asd"
+  }
+ }
+}

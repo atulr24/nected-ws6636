@@ -1,0 +1,539 @@
+{
+ "entityType": "workflow",
+ "data": {
+  "testedAt": "2025-11-15T11:12:23.654Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "createdAt": "2025-11-15T11:09:41.313Z",
+  "updatedAt": "2025-11-15T11:12:23.65489Z",
+  "isDeleted": false,
+  "entityId": "49690c1d-dcb5-4293-9aeb-b145eba78662",
+  "name": "TsetWF",
+  "commitId": "commit-558f4b81-7992-40f7-b420-e53592642ad8",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-15 11:09:41",
+   "timeStamp": "2025-11-15T11:09:41.313567124Z"
+  },
+  "startNode": "n_2NtYNK",
+  "version": "draft",
+  "description": "",
+  "trigger": {
+   "apiNode": "1"
+  },
+  "nodes": [
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 0
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "1",
+    "type": "trigger",
+    "data": {
+     "input": {
+      "name": {
+       "executedValue": "Atul",
+       "name": "name",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "name": "Atul"
+     },
+     "settings": {
+      "cacheEnabled": false,
+      "durationUnit": "d",
+      "durationValue": 0,
+      "authType": "private",
+      "cacheKeys": "",
+      "isEnabled": true
+     },
+     "nodeType": "apiTrigger",
+     "name": "Trigger",
+     "runInLoop": {
+      
+     },
+     "blockName": "trigger",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 130
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_fNG9KS",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "y": 205,
+     "x": 560.6018676757812
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_2NtYNK",
+    "type": "rule",
+    "data": {
+     "input": {
+      "name": {
+       "value": "",
+       "name": "name",
+       "dataType": "string",
+       "source": "Trigger",
+       "attribute": "name"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "action": null,
+      "output": [],
+      "ruleId": "ffc25f00-e932-4af8-aee4-de23fa9a7582",
+      "warnings": [],
+      "additionalOutput": {
+       
+      }
+     },
+     "settings": {
+      "actionInSync": false,
+      "timeoutAsync": 20,
+      "errorContinue": false,
+      "timeout": 10,
+      "runAction": false
+     },
+     "nodeType": "dtNode",
+     "entity": "rule",
+     "entityId": "ffc25f00-e932-4af8-aee4-de23fa9a7582",
+     "status": "success",
+     "name": "RuleForWorkFlow",
+     "runInLoop": {
+      
+     },
+     "blockName": "decisionTable",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 335
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_3FIQ6u",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 410
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_AOzZP7",
+    "type": "setVarNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "executedValue": "asd",
+       "name": "key_0",
+       "dataType": "string",
+       "source": "globalVar",
+       "attribute": "namess"
+      }
+     },
+     "executedValue": {
+      "resetOutput": {
+       
+      },
+      "error": "",
+      "output": {
+       "key_0": "asd"
+      }
+     },
+     "settings": {
+      "errorContinue": false
+     },
+     "nodeType": "setVarNode",
+     "entity": "setVariableNode",
+     "entityId": "n_AOzZP7",
+     "status": "success",
+     "name": "SetVariable",
+     "runInLoop": {
+      
+     },
+     "blockName": "setVariable",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 540
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_0gJVWp",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 615
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_MpuhoF",
+    "type": "restApiNode",
+    "data": {
+     "input": {
+      "queryParams": {
+       "value": []
+      },
+      "authentication": {
+       "value": "None"
+      },
+      "path": {
+       "value": "/posts/2"
+      },
+      "method": {
+       "value": "GET"
+      },
+      "baseUrl": {
+       "value": "https://jsonplaceholder.typicode.com"
+      },
+      "headers": {
+       "value": []
+      },
+      "contentType": {
+       "value": ""
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "output": {
+       "Body": {
+        "id": 2,
+        "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+        "title": "qui est esse",
+        "userId": 1
+       },
+       "Headers": {
+        "Age": "28574",
+        "Pragma": "no-cache",
+        "Alt-Svc": "h3=\":443\"; ma=86400",
+        "Content-Type": "application/json; charset=utf-8",
+        "X-Powered-By": "Express",
+        "Cache-Control": "max-age=43200",
+        "Server-Timing": "cfCacheStatus;desc=\"HIT\",cfEdge;dur=4,cfOrigin;dur=0",
+        "X-Ratelimit-Limit": "1000",
+        "Cf-Ray": "99ee4fbc9b23732c-DEL",
+        "Server": "cloudflare",
+        "Expires": "-1",
+        "Cf-Cache-Status": "HIT",
+        "Nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+        "Via": "2.0 heroku-router",
+        "Date": "Sat, 15 Nov 2025 11:12:04 GMT",
+        "Etag": "W/\"116-jnDuMpjju89+9j7e0BqkdFsVRjs\"",
+        "Reporting-Endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=IBz%2BnuVlZLu2zapFxt%2BDQWZCfCMEB0fVphCIYLtAvFo%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1763176549\"",
+        "X-Ratelimit-Remaining": "950",
+        "X-Content-Type-Options": "nosniff",
+        "Access-Control-Allow-Credentials": "true",
+        "Vary": "Origin, Accept-Encoding",
+        "Report-To": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=IBz%2BnuVlZLu2zapFxt%2BDQWZCfCMEB0fVphCIYLtAvFo%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1763176549\"}],\"max_age\":3600}",
+        "X-Ratelimit-Reset": "1763176602"
+       },
+       "StatusCode": 200
+      }
+     },
+     "settings": {
+      "durationValue": 0,
+      "errorContinue": false,
+      "timeout": 10,
+      "cacheKeys": "",
+      "cacheEnabled": false,
+      "durationUnit": "d",
+      "timeoutAsync": 20
+     },
+     "nodeType": "restApiNode",
+     "entity": "connector",
+     "entityId": "bf749ce8-bacb-491c-8b5f-d1c2d3a2a967",
+     "status": "success",
+     "name": "restAPI",
+     "runInLoop": {
+      
+     },
+     "blockName": "restAPI",
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 745
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_zO9Lk8",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 820
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_ddM7FE",
+    "type": "responseNode",
+    "data": {
+     "input": {
+      "key_0": {
+       "value": "Value",
+       "executedValue": "Value",
+       "name": "key_0",
+       "dataType": "string"
+      }
+     },
+     "executedValue": {
+      "error": "",
+      "output": {
+       "key_0": "Value"
+      }
+     },
+     "settings": {
+      "timeout": 10,
+      "timeoutAsync": 20,
+      "errorContinue": false
+     },
+     "nodeType": "responseNode",
+     "entity": "responseNode",
+     "entityId": "n_ddM7FE",
+     "status": "success",
+     "name": "Response",
+     "runInLoop": {
+      
+     },
+     "blockName": "response",
+     "testedAt": "2025-11-15T11:12:23.654Z"
+    }
+   },
+   {
+    "position": {
+     "x": 560.6018676757812,
+     "y": 950
+    },
+    "sourcePosition": "bottom",
+    "targetPosition": "top",
+    "id": "n_SLouwY",
+    "type": "addNode",
+    "data": {
+     "nodeType": "addNodeMd",
+     "runInLoop": {
+      
+     },
+     "testedAt": "0001-01-01T00:00:00Z"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_RrdgIW",
+    "source": "1",
+    "target": "n_fNG9KS",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_npXXFG",
+    "source": "n_2NtYNK",
+    "target": "n_3FIQ6u",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_ICDnM7",
+    "source": "n_fNG9KS",
+    "target": "n_2NtYNK",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_pZYvwV",
+    "source": "n_AOzZP7",
+    "target": "n_0gJVWp",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_K8sK1A",
+    "source": "n_3FIQ6u",
+    "target": "n_AOzZP7",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_mr745q",
+    "source": "n_MpuhoF",
+    "target": "n_zO9Lk8",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_UwyzFo",
+    "source": "n_0gJVWp",
+    "target": "n_MpuhoF",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "strokeWidth": 1,
+     "stroke": "gray"
+    },
+    "id": "e_JAnp2v",
+    "source": "n_ddM7FE",
+    "target": "n_SLouwY",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   },
+   {
+    "style": {
+     "stroke": "gray",
+     "strokeWidth": 1
+    },
+    "id": "e_U80JMv",
+    "source": "n_zO9Lk8",
+    "target": "n_ddM7FE",
+    "data": {
+     "edgeType": "then"
+    },
+    "type": "smoothEdge"
+   }
+  ],
+  "isEnabled": true,
+  "settings": {
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-558f4b81-7992-40f7-b420-e53592642ad8",
+   "entityType": "workflow",
+   "entityId": "49690c1d-dcb5-4293-9aeb-b145eba78662",
+   "entityVersion": "draft",
+   "entityNodeId": "n_MpuhoF",
+   "dependencyType": "connector",
+   "dependencyId": "bf749ce8-bacb-491c-8b5f-d1c2d3a2a967",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-15T11:12:04.267794Z",
+   "updatedAt": "2025-11-15T11:12:23.467835Z"
+  },
+  {
+   "entityCommitId": "commit-558f4b81-7992-40f7-b420-e53592642ad8",
+   "entityType": "workflow",
+   "entityId": "49690c1d-dcb5-4293-9aeb-b145eba78662",
+   "entityVersion": "draft",
+   "entityNodeId": "namess",
+   "dependencyType": "variable",
+   "dependencyId": "734c0f43-8e98-4964-aa4d-a7246749a708",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-15T11:11:35.456625Z",
+   "updatedAt": "2025-11-15T11:12:23.466864Z"
+  },
+  {
+   "entityCommitId": "commit-558f4b81-7992-40f7-b420-e53592642ad8",
+   "entityType": "workflow",
+   "entityId": "49690c1d-dcb5-4293-9aeb-b145eba78662",
+   "entityVersion": "draft",
+   "entityNodeId": "n_2NtYNK",
+   "dependencyType": "rule",
+   "dependencyId": "ffc25f00-e932-4af8-aee4-de23fa9a7582",
+   "dependencyVersion": "0.10",
+   "isDeleted": false,
+   "createdAt": "2025-11-15T11:10:03.704575Z",
+   "updatedAt": "2025-11-15T11:12:23.468836Z"
+  }
+ ]
+}
