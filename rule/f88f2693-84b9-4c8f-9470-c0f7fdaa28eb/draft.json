@@ -3,7 +3,7 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-15T11:38:25.415Z",
-  "updatedAt": "2025-11-15T11:39:46.673763Z",
+  "updatedAt": "2025-11-15T12:48:51.77216Z",
   "isDeleted": false,
   "testedAt": "0001-01-01T00:00:00Z",
   "publishedAt": "0001-01-01T00:00:00Z",
@@ -151,7 +151,7 @@
    "dependencyVersion": "live",
    "isDeleted": false,
    "createdAt": "2025-11-15T11:38:54.947377Z",
-   "updatedAt": "2025-11-15T11:39:46.67886Z"
+   "updatedAt": "2025-11-15T12:48:51.777926Z"
   }
  ]
 }
